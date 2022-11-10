@@ -94,22 +94,21 @@ if __name__ == '__main__':
     excel_Data.columns = ['id', 'year']
 
     #进程池
-    mpool = multiprocessing.Pool(processes=1)
+    # mpool = multiprocessing.Pool(processes=1)
 
     #线程池
-    tpool = ThreadPoolExecutor(max_workers=1)
+    mpool = ThreadPoolExecutor(max_workers=10)
+    tpool = ThreadPoolExecutor(max_workers=10)
 
     # 获取每一年的id year
     task_m = []
-    for i in range(2021,2022):
-        task = mpool.apply_async(get_data_pandas,(excel_Data,i))
+    for i in range(1999,2023):
+        task = mpool.submit(get_data_pandas,excel_Data,i)
         task_m.append(task)
-    mpool.close()
-    mpool.join()
 
-    task_t=[]
-    for i in task_m:
-        year_pandas,count_meet,year =i.get()
+    task_t = []
+    for i in as_completed(task_m):
+        year_pandas,count_meet,year =i.result()
         task = tpool.submit(count_excel,year_pandas,year,count_meet)
         task_t.append(task)
 
