@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	TDoc List
+</title>
+    <!-- Global framework (3GPP CSS framework) -->
+    <link rel="stylesheet" type="text/css" href="3GPPCSSFRK/3gppcssfwk.css" />
+    <!-- Specific style of this aspx file -->
+    <link rel="stylesheet" type="text/css" href="Style/GenerateDocumentListStyle.css" /></head>
+<body id="generateDocumentListBody">
+    <form name="frmDocumentList" method="post" action="./GenerateDocumentList.Aspx?meetingId=21256" id="frmDocumentList">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="z1HCmjzwv2jw5QciCVILJ89JupUgEIW/ZJgcfyvq2oVa8DkVBSdMGxURDeG+eziWkCm4tlJ9LcMeX4pk37Yh9wyQ91GbZyS/pMR7oaT21jynhn2aOT/FQwpJw4TGTONIU4v47iRpmfSwf/Lba2EEDovFHMLEwRVqCyTiI4ypUq9k1uZ9vAU7S1pPKvaRSgIzxQWFlo5s3eHIcedWZwyH1ZLxY7y7Jv/XoBSLVGDXdsakBqHHkfdl6M6OSmwKWSdrWZvxgKme5PQhqCL885eO5zPgg2YfhrHM1mH+T6pS4je+8Hvsx7m5V9k8L0A0yyvhq1n4VA==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="03B7F0E4" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+        <div id="pnlError" class="messageBox error">
+	
+            <span id="lblError"><li>An error occured. Please try again or contact the IT support</li>
+</span>
+        
+</div>
+    </form>
+</body>
+</html>
